@@ -1,7 +1,7 @@
-package com.github.continuedev.continueintellijextension.auth
+package com.github.skdev.skdevintellijextension.auth
 
-import com.github.continuedev.continueintellijextension.services.ContinueExtensionSettings
-import com.github.continuedev.continueintellijextension.services.ContinuePluginService
+import com.github.skdev.skdevintellijextension.services.ContinueExtensionSettings
+import com.github.skdev.skdevintellijextension.services.ContinuePluginService
 import com.google.gson.Gson
 import com.intellij.credentialStore.Credentials
 import com.intellij.ide.passwordSafe.PasswordSafe

@@ -1,7 +1,7 @@
-package com.github.continuedev.continueintellijextension.actions
+package com.github.skdev.skdevintellijextension.actions
 
-import com.github.continuedev.continueintellijextension.editor.DiffStreamService
-import com.github.continuedev.continueintellijextension.services.ContinuePluginService
+import com.github.skdev.skdevintellijextension.editor.DiffStreamService
+import com.github.skdev.skdevintellijextension.services.ContinuePluginService
 import com.intellij.openapi.actionSystem.AnAction
 import com.intellij.openapi.actionSystem.AnActionEvent
 import com.intellij.openapi.actionSystem.PlatformDataKeys
