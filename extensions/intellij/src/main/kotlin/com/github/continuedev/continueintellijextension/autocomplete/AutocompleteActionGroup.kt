@@ -1,6 +1,6 @@
-package com.github.continuedev.continueintellijextension.autocomplete
+package com.github.skdev.skdevintellijextension.autocomplete
 
-import com.github.continuedev.continueintellijextension.services.ContinueExtensionSettings
+import com.github.skdev.skdevintellijextension.services.ContinueExtensionSettings
 import com.intellij.openapi.actionSystem.ActionUpdateThread
 import com.intellij.openapi.actionSystem.AnActionEvent
 import com.intellij.openapi.actionSystem.DefaultActionGroup

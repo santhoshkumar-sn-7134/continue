@@ -1,12 +1,12 @@
-package com.github.continuedev.continueintellijextension.services
+package com.github.skdev.skdevintellijextension.services
 
 import IntelliJIDE
-import com.github.continuedev.continueintellijextension.`continue`.CoreMessenger
-import com.github.continuedev.continueintellijextension.`continue`.CoreMessengerManager
-import com.github.continuedev.continueintellijextension.`continue`.DiffManager
-import com.github.continuedev.continueintellijextension.`continue`.IdeProtocolClient
-import com.github.continuedev.continueintellijextension.toolWindow.ContinuePluginToolWindowFactory
-import com.github.continuedev.continueintellijextension.utils.uuid
+import com.github.skdev.skdevintellijextension.`continue`.CoreMessenger
+import com.github.skdev.skdevintellijextension.`continue`.CoreMessengerManager
+import com.github.skdev.skdevintellijextension.`continue`.DiffManager
+import com.github.skdev.skdevintellijextension.`continue`.IdeProtocolClient
+import com.github.skdev.skdevintellijextension.toolWindow.ContinuePluginToolWindowFactory
+import com.github.skdev.skdevintellijextension.utils.uuid
 import com.intellij.openapi.Disposable
 import com.intellij.openapi.components.Service
 import com.intellij.openapi.project.DumbAware

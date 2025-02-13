@@ -1,6 +1,6 @@
-package com.github.continuedev.continueintellijextension.editor
+package com.github.skdev.skdevintellijextension.editor
 
-import com.github.continuedev.continueintellijextension.services.ContinuePluginService
+import com.github.skdev.skdevintellijextension.services.ContinuePluginService
 import com.intellij.openapi.application.ApplicationManager
 import com.intellij.openapi.command.WriteCommandAction
 import com.intellij.openapi.command.undo.UndoManager

@@ -1,16 +1,16 @@
-package com.github.continuedev.continueintellijextension.activities
+package com.github.skdev.skdevintellijextension.activities
 
 import IntelliJIDE
-import com.github.continuedev.continueintellijextension.auth.AuthListener
-import com.github.continuedev.continueintellijextension.auth.ContinueAuthService
-import com.github.continuedev.continueintellijextension.auth.ControlPlaneSessionInfo
-import com.github.continuedev.continueintellijextension.constants.getContinueGlobalPath
-import com.github.continuedev.continueintellijextension.`continue`.*
-import com.github.continuedev.continueintellijextension.listeners.ContinuePluginSelectionListener
-import com.github.continuedev.continueintellijextension.services.ContinueExtensionSettings
-import com.github.continuedev.continueintellijextension.services.ContinuePluginService
-import com.github.continuedev.continueintellijextension.services.SettingsListener
-import com.github.continuedev.continueintellijextension.utils.toUriOrNull
+import com.github.skdev.skdevintellijextension.auth.AuthListener
+import com.github.skdev.skdevintellijextension.auth.ContinueAuthService
+import com.github.skdev.skdevintellijextension.auth.ControlPlaneSessionInfo
+import com.github.skdev.skdevintellijextension.constants.getContinueGlobalPath
+import com.github.skdev.skdevintellijextension.`continue`.*
+import com.github.skdev.skdevintellijextension.listeners.ContinuePluginSelectionListener
+import com.github.skdev.skdevintellijextension.services.ContinueExtensionSettings
+import com.github.skdev.skdevintellijextension.services.ContinuePluginService
+import com.github.skdev.skdevintellijextension.services.SettingsListener
+import com.github.skdev.skdevintellijextension.utils.toUriOrNull
 import com.intellij.openapi.actionSystem.KeyboardShortcut
 import com.intellij.openapi.application.ApplicationManager
 import com.intellij.openapi.application.ApplicationNamesInfo

@@ -1,7 +1,7 @@
-package com.github.continuedev.continueintellijextension.`continue`
+package com.github.skdev.skdevintellijextension.`continue`
 
-import com.github.continuedev.continueintellijextension.services.TelemetryService
-import com.github.continuedev.continueintellijextension.utils.getMachineUniqueID
+import com.github.skdev.skdevintellijextension.services.TelemetryService
+import com.github.skdev.skdevintellijextension.utils.getMachineUniqueID
 import com.intellij.ide.plugins.PluginManager
 import com.intellij.openapi.components.service
 import com.intellij.openapi.extensions.PluginId

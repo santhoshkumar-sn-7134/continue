@@ -1,7 +1,7 @@
-package com.github.continuedev.continueintellijextension.services
+package com.github.skdev.skdevintellijextension.services
 
-import com.github.continuedev.continueintellijextension.constants.getConfigJsPath
-import com.github.continuedev.continueintellijextension.constants.getConfigJsonPath
+import com.github.skdev.skdevintellijextension.constants.getConfigJsPath
+import com.github.skdev.skdevintellijextension.constants.getConfigJsonPath
 import com.intellij.execution.target.value.constant
 import com.intellij.openapi.application.ApplicationInfo
 import com.intellij.openapi.application.ApplicationManager
@@ -85,7 +85,7 @@ class ContinueRemoteConfigSyncResponse {
 }
 
 @State(
-    name = "com.github.continuedev.continueintellijextension.services.ContinueExtensionSettings",
+    name = "com.github.skdev.skdevintellijextension.services.ContinueExtensionSettings",
     storages = [Storage("ContinueExtensionSettings.xml")]
 )
 open class ContinueExtensionSettings : PersistentStateComponent<ContinueExtensionSettings.ContinueState> {
