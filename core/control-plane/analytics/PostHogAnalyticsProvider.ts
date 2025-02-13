@@ -13,11 +13,7 @@ export default class PostHogAnalyticsProvider implements IAnalyticsProvider {
     event: string,
     properties: { [key: string]: any },
   ): Promise<void> {
-    this.client?.capture({
-      distinctId: this.uniqueId,
-      event,
-      properties,
-    });
+    // Telemetry capture removed
   }
 
   async setup(
@@ -25,20 +21,7 @@ export default class PostHogAnalyticsProvider implements IAnalyticsProvider {
     uniqueId: string,
     controlPlaneProxyInfo?: ControlPlaneProxyInfo,
   ): Promise<void> {
-    if (!config || !config.clientKey || !config.url) {
-      this.client = undefined;
-    } else {
-      try {
-        this.uniqueId = uniqueId;
-
-        const { PostHog } = await import("posthog-node");
-        this.client = new PostHog(config.clientKey, {
-          host: config.url,
-        });
-      } catch (e) {
-        console.error(`Failed to setup telemetry: ${e}`);
-      }
-    }
+    // Telemetry setup removed
   }
 
   async shutdown(): Promise<void> {}

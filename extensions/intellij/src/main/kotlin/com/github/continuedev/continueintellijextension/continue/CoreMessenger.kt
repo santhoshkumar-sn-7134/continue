@@ -3,8 +3,6 @@ package com.github.continuedev.continueintellijextension.`continue`
 import com.github.continuedev.continueintellijextension.constants.MessageTypes
 import com.github.continuedev.continueintellijextension.services.ContinueExtensionSettings
 import com.github.continuedev.continueintellijextension.services.ContinuePluginService
-import com.github.continuedev.continueintellijextension.services.TelemetryService
-import com.github.continuedev.continueintellijextension.utils.uuid
 import com.google.gson.Gson
 import com.intellij.openapi.components.service
 import com.intellij.openapi.project.Project
@@ -188,10 +186,6 @@ class CoreMessenger(
                 }
 
                 println("Core process exited with output: $err")
-
-                // Log the cause of the failure
-                val telemetryService = service<TelemetryService>()
-                telemetryService.capture("jetbrains_core_exit", mapOf("error" to err))
 
                 // Clean up all resources
                 writer?.close()
