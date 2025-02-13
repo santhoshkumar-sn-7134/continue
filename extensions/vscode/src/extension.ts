@@ -4,7 +4,6 @@
 
 import { setupCa } from "core/util/ca";
 import { extractMinimalStackTraceInfo } from "core/util/extractMinimalStackTraceInfo";
-import { Telemetry } from "core/util/posthog";
 import * as vscode from "vscode";
 
 import { getExtensionVersion } from "./util/util";
@@ -18,15 +17,6 @@ async function dynamicImportAndActivate(context: vscode.ExtensionContext) {
 export function activate(context: vscode.ExtensionContext) {
   return dynamicImportAndActivate(context).catch((e) => {
     console.log("Error activating extension: ", e);
-    Telemetry.capture(
-      "vscode_extension_activation_error",
-      {
-        stack: extractMinimalStackTraceInfo(e.stack),
-        message: e.message,
-      },
-      false,
-      true,
-    );
     vscode.window
       .showWarningMessage(
         "Error activating the Continue extension.",
@@ -45,13 +35,5 @@ export function activate(context: vscode.ExtensionContext) {
 }
 
 export function deactivate() {
-  Telemetry.capture(
-    "deactivate",
-    {
-      extensionVersion: getExtensionVersion(),
-    },
-    true,
-  );
-
-  Telemetry.shutdownPosthogClient();
+  // No telemetry capture on deactivate
 }

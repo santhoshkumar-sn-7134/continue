@@ -3,7 +3,6 @@ import {
   AutocompleteCodeSnippet,
   AutocompleteSnippetType,
 } from "core/autocomplete/snippets/types";
-import { PosthogFeatureFlag, Telemetry } from "core/util/posthog";
 import { LRUCache } from "lru-cache";
 import * as vscode from "vscode";
 
@@ -33,10 +32,7 @@ export class RecentlyVisitedRangesService {
   }
 
   private async initWithPostHog() {
-    const recentlyVisitedRangesNumSurroundingLines =
-      await Telemetry.getValueForFeatureFlag(
-        PosthogFeatureFlag.RecentlyVisitedRangesNumSurroundingLines,
-      );
+    const recentlyVisitedRangesNumSurroundingLines = 5;
 
     if (!recentlyVisitedRangesNumSurroundingLines) {
       return;

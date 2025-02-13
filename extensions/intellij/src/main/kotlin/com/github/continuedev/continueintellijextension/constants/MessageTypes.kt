@@ -4,8 +4,6 @@ class MessageTypes {
     companion object {
         val ideMessageTypes = listOf(
             "readRangeInFile",
-            "isTelemetryEnabled",
-            "getUniqueId",
             "getWorkspaceConfigs",
             "getDiff",
             "getTerminalContents",

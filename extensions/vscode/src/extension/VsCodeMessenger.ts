@@ -505,16 +505,8 @@ export class VsCodeMessenger {
       return await ide.getIdeInfo();
     });
 
-    this.onWebviewOrCore("isTelemetryEnabled", async (msg) => {
-      return await ide.isTelemetryEnabled();
-    });
-
     this.onWebviewOrCore("getWorkspaceConfigs", async (msg) => {
       return await ide.getWorkspaceConfigs();
-    });
-
-    this.onWebviewOrCore("getUniqueId", async (msg) => {
-      return await ide.getUniqueId();
     });
   }
 }

@@ -11,7 +11,6 @@ import { Core } from "core/core";
 import { walkDirAsync } from "core/indexing/walkDir";
 import { GlobalContext } from "core/util/GlobalContext";
 import { getConfigJsonPath, getDevDataFilePath } from "core/util/paths";
-import { Telemetry } from "core/util/posthog";
 import readLastLines from "read-last-lines";
 import * as vscode from "vscode";
 
